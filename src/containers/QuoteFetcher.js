@@ -16,7 +16,7 @@ export default class QuoteFetcher extends Component {
   }
 
   componentDidMount() {
-    // this.fetch();
+    this.fetch();
   }
 
 
@@ -28,6 +28,7 @@ export default class QuoteFetcher extends Component {
       <>
         <Button text="Get a new one" onClick={this.fetch} />
         <Quote {...quote} />
+
       </>
     );
   }
